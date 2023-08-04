@@ -2,12 +2,13 @@ import classNames from "classnames/bind";
 import styles from "./SearchCourse.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import Image from "~/components/Image";
 
 const cx = classNames.bind(styles);
 function SearchCourse() {
     return (
         <div className={cx('wrapper')}>
-            <img className={cx('avatarcourse')} src="https://files.fullstack.edu.vn/f8-prod/courses/3.png" alt="khoahoc"></img>
+            <Image className={cx('avatarcourse')} src=" https://files.fullstack.edu.vn/f8-prod/courses/3.png" alt="khoahoc" />
             <div className={cx('info')}>
                 <h4 className={cx('name')}>
                     <span>
