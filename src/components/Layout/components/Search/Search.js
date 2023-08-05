@@ -8,7 +8,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import HeadlessTippy from '@tippyjs/react/headless';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
-import SearchCourse from '~/components/SearchCourse';
+import SearchCourse from '~/components/SearchCourse/SearchCourse';
 import styles from './Search.module.scss';
 
 const cx = classNames.bind(styles)
@@ -21,7 +21,7 @@ function Search() {
 
     const handleClear = () => {
         setSearchValue('');
-        setSearchResult([]);
+        // setSearchResult([]);
         inputRef.current.focus();
 
     }
@@ -73,7 +73,7 @@ function Search() {
                         <FontAwesomeIcon icon={faCircleXmark} />
                     </button>
                 )}
-                {/* <FontAwesomeIcon className={cx('loading')} icon={faSpinner} /> */}
+                {/* {<FontAwesomeIcon className={cx('loading')} icon={faSpinner} />} */}
 
                 <button className={cx('search-btn')}>
                     <FontAwesomeIcon icon={faMagnifyingGlass} />

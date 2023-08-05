@@ -1,9 +1,8 @@
 
 import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Image from '~/components/Image';
+import Image from '~/components/Image/Image';
 import {
-    faBell,
     faBook,
     faCog,
     faEarthAsia,
@@ -13,11 +12,11 @@ import {
     faToggleOff,
     faUser,
 } from '@fortawesome/free-solid-svg-icons';
-import Tippy from '@tippyjs/react/headless';
-import Button from '~/components/Button';
+import Button from '~/components/Button/Button';
 import styles from './Header.module.scss';
-import Search from '../Search';
-import Menu from '~/components/Popper/Menu';
+import Search from '../Search/Search';
+import Menu from '~/components/Popper/Menu/Menu';
+import Notification from '../Notification/Notification';
 const cx = classNames.bind(styles);
 const MENU_ITEMS = [
     {
@@ -58,7 +57,7 @@ function Header() {
         {
             icon: <FontAwesomeIcon icon={faUser} />,
             title: 'Trang Ca Nhan',
-            to: '/@vohoainam',
+            to: './profile',
         },
         {
             icon: <FontAwesomeIcon icon={faBook} />,
@@ -89,14 +88,12 @@ function Header() {
                 <div className={cx('actions')}>
                     {currentUser ? (
                         <div className={cx('current-user')}>
-                            <button className={cx('action-btn')}>
-                                <FontAwesomeIcon icon={faBell} />
-                            </button>
+                            <Notification />
                         </div>
                     ) : (
                         <div>
-                            <Button primary>Sign in</Button>
-                            <Button primary>Log in</Button>
+                            <Button outline to='/signin'>Sign in</Button>
+                            <Button outline to="/login">Log in</Button>
 
                         </div>
                     )}

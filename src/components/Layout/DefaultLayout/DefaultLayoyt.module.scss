@@ -4,11 +4,14 @@
     align-items: center;
 }
 .container {
-    width: 1550px;
+    width: 1600px;
+    max-width: 100%;
     padding: 0 24px;
     display: flex;
 }
 .content {
     flex: 1;
     min-height: 1000px;
+    width: 75%;
+    float: right;
 }
