@@ -1,0 +1,29 @@
+.course {
+    width: 25%;
+    margin-top: 20px;
+    float: left;
+    align-items: center;
+}
+.course-img {
+    width: 15vw;
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+}
+.course-name {
+    flex: 1;
+    font-size: 1.6rem;
+    color: #292929;
+    cursor: pointer;
+}
+.courseItem-students {
+    margin-top: 5px;
+    display: flex;
+}
+.total-students {
+    margin-left: 10px;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    margin-top: -4px;
+}

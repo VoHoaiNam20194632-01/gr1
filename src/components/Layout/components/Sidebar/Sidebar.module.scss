@@ -1,6 +1,17 @@
-.wrapper {
+.App_sidebar {
     width: 15%;
     min-height: 1000px;
     float: left;
     padding: 20px 0 26px 8px;
+
+    &:after,
+    :before {
+        box-sizing: inherit;
+    }
+}
+.Sidebar_wrapper {
+    z-index: 8;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 74px;
 }

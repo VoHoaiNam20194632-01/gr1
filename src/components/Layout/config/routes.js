@@ -3,7 +3,8 @@ const routes = {
     lotrinh: '/lotrinh',
     course: '/course',
     search: '/search',
-    profile: './profile'
+    profile: '/profile',
+    tuyendung: '/tuyendung'
 };
 
 export default routes;

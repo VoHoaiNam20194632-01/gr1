@@ -57,7 +57,7 @@ function Header() {
         {
             icon: <FontAwesomeIcon icon={faUser} />,
             title: 'Trang Ca Nhan',
-            to: './profile',
+            to: '/profile',
         },
         {
             icon: <FontAwesomeIcon icon={faBook} />,
@@ -73,7 +73,7 @@ function Header() {
         {
             icon: <FontAwesomeIcon icon={faSignOut} />,
             title: 'Dang xuat',
-            to: '/dangxuat',
+            to: '/login',
             separate: true,
         },
     ]
